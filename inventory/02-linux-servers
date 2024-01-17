@@ -1,13 +1,13 @@
 ---
 idm_servers:
    hosts:
-     server3.hub.local
-     server4.hub.local
+     server3.hub.local:
+     server4.hub.local:
    children:
      idmhosts:
-       hosts: 
-         server3.hub.local
-       	 server4.hub.local
+        hosts: 
+          server3.hub.local:
+       	  server4.hub.local:
      idmreplicas:
-       hosts:
-         server4.hub.local
+        hosts:
+          server4.hub.local:
