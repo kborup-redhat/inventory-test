@@ -2,8 +2,8 @@ idm_bofh:
     children:
       ipaservers:
         hosts:
-          idm01.idm.bofh.local:
-          idm02.idm.bofh.local:
+          idm01.idm.bofh.local: env=ipabofh
+          idm02.idm.bofh.local: env=ipabofh
       ipareplicas:
         hosts:
-          idm02.idm.bofh.local:
+          idm02.idm.bofh.local: env=ipabofh
