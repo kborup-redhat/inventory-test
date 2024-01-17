@@ -1,0 +1,9 @@
+idm_hub:
+    children:
+      ipaservers:
+        hosts:
+          idm01.idm.hub.local
+          idm02.idm.hub.local
+      ipareplicas:
+        hosts:
+          idm02.idm.hub.local
