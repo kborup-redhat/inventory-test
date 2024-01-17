@@ -2,8 +2,11 @@ idm_hub:
     children:
       ipaservers:
         hosts:
-          idm01.idm.hub.local: env=ipatest
-          idm02.idm.hub.local: env=ipatest
+          idm01.idm.hub.local:
+             env: idmhub
+          idm02.idm.hub.local:
+             env: idmhub
       ipareplicas:
         hosts:
-          idm02.idm.hub.local: env=ipatest
+          idm02.idm.hub.local: 
+             env: idmhub
